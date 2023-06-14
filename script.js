@@ -30,4 +30,10 @@ function boolToWord( bool ){
 
 function solution(str){
     return str.split('').reverse().join('');  
+}
+
+class SmallestIntegerFinder {
+    findSmallestInt(args) {
+      return Math.min(...args)
+    }
   }
