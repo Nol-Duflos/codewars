@@ -99,18 +99,44 @@
 //   }
 
 
-let arrayOfSheep = [true,  true,  true,  false,
-  true,  true,  true,  true ,
-  true,  false, true,  false,
-  true,  false, false, true ,
-  true,  true,  true,  true ,
-  false, false, true,  true];
+// let arrayOfSheep = [true,  true,  true,  false,
+//   true,  true,  true,  true ,
+//   true,  false, true,  false,
+//   true,  false, false, true ,
+//   true,  true,  true,  true ,
+//   false, false, true,  true];
 
-// let lenght = list.length;
+// // let lenght = list.length;
 
-// console.log(lenght);
+// // console.log(lenght);
 
-var stringToNumber = function(str){
-  // put your code here
-  return Number(str);
+// var stringToNumber = function(str){
+//   // put your code here
+//   return Number(str);
+// }
+
+// function person(name, age, color) {
+//   this.name = name;
+//   this.age = age;
+//   this.Favcolor = color;
+// }
+// let John = new person("John", 42, "Green");
+// let Amy =  new person("Amy", 21, "Red");
+
+// console.log(John.age);
+// console.log(p2.name);
+
+function main() {
+
+  var flightNumber = "SBI 3205";
+  var flightStatus = "delayed";
+
+  var flight1 = new Flight(flightNumber, flightStatus);
+
+  console.log('The flight ' + flight1.number + ' Is ' + flight.status);
+}
+
+function Flight(flightNumber, status) {
+  this.number = flightNumber;
+  this.status = status;
 }
