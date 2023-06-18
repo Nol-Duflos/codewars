@@ -126,17 +126,79 @@
 // console.log(John.age);
 // console.log(p2.name);
 
+// function main() {
+
+//   var flightNumber = "SBI 3205";
+//   var flightStatus = "delayed";
+
+//   var flight1 = new Flight(flightNumber, flightStatus);
+
+//   console.log('The flight ' + flight1.number + ' Is ' + flight.status);
+// }
+
+// function Flight(flightNumber, status) {
+//   this.number = flightNumber;
+//   this.status = status;
+// }
+
+var John = {name: "John", age: 25};
+var James = {name: "James", age: 21};
+//Les objets sont fait de propriétés qui sont utilisés pour décrirent l'objet. Les valeurs de la propriété d'un objet peuvent soit contenir de de la data primaire, soit d'autres objets
+//Les méthodes sont des fonctions qui sont comprises comme des propriétés d'objets.
+nomMethode = function() {
+  //Lignes de codes
+}
+//C'est avec cette syntax qu'on accède à l'object
+nomObject.nomMethode();
+
+//Une méthode est une fonction qui appartient à un object. On y fait référence avec le mot-clef "This"
+function person(name, age) {
+  this.name = name;
+  this.age = age;
+  this.changeName = function(name) {
+    this.name = name;
+  }
+}
+
+var p = new person("Davis", 23);
+p.changeName("John"); //Maintenant, quand on appelle p.name, on obtient "John";
+
+this.changeprice = function(price) {
+  this.price = price - (discount*price);
+}
+
 function main() {
+  var proID = readLine();
+  var price = parseInt(readLine(), 10);
+  var discount = parseInt(readLine(), 10);
 
-  var flightNumber = "SBI 3205";
-  var flightStatus = "delayed";
+  var prod1 = new CSSMathProduct(proID, price);
+  console.log(prod1.proID + " price: " + prod1.price);
 
-  var flight1 = new Flight(flightNumber, flightStatus);
-
-  console.log('The flight ' + flight1.number + ' Is ' + flight.status);
+  prod1.changeprice(discount);
+  console.log(prod1.proID + " new price: " + prod1.price);
 }
 
-function Flight(flightNumber, status) {
-  this.number = flightNumber;
-  this.status = status;
+function Product(proID, price) {
+  this.proID = proID;
+  this.price = price;
+
+  this.changeprice = function(discount) {
+    this.price = price - (discount*price);
+  }
 }
+
+//Price-((discount/100)*Price)
+
+function quelquun(name, age) {
+  this.name = name;
+  this.age = age;
+  this.yearOfBirth = bornYear;
+}
+
+function bornYear() {
+  return 2016 - this.age;
+}
+
+var p3 = new quelquun("A", 22);
+console.log(p3.yearOfBirth());
