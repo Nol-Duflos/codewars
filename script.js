@@ -264,3 +264,8 @@ function lovefunc(flower1, flower2){
 function lovefunc(flower1, flower2){
   return flower1 % 2 !== flower2 % 2;
 }
+
+function greet(name){
+  //your code here
+  return `Hello, ${name} how are you doing today?`
+}
