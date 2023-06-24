@@ -203,31 +203,64 @@
 // var p3 = new quelquun("A", 22);
 // console.log(p3.yearOfBirth());
 
-var myString = "abcdef";
-console.log(myString.length);
+// var myString = "abcdef";
+// console.log(myString.length);
 
-//Contact (name, number)
+// //Contact (name, number)
 
-NomMethode = function() {
-  //Ton code
-  this.contact = contact;
+// NomMethode = function() {
+//   //Ton code
+//   this.contact = contact;
+// }
+
+// function contact(name, number) {
+//   this.name = name;
+//   this.number = number;
+
+//   this.print = function(){
+//     console/log(this.name + ": " + this.number);
+//   }
+// }
+
+// function print() {
+//   console.log(this.name + ": " + this.number);
+// }
+
+// var a = new contact("David", 12345);
+// var b = new contact("Amy", 9363343680);
+
+// a.print();
+// b.print();
+
+const numbers = [/*1, 5.2, 4, 0, -1*/];
+
+function sum (numbers) {
+  if (numbers.length === 0) return 0;
+  return numbers.reduce((x,y) => x + y );
 }
+// let sum = numbers.reduce((x,y) => x + y ); //(accumulator, currentValue) => accumulator + currentValue,
+// console.log(sum);
 
-function contact(name, number) {
-  this.name = name;
-  this.number = number;
+function sum (numbers) {
+  if (numbers.length === 0 ) return 0;
+  return numbers.reduce((x,y)=>x+y);
+};
 
-  this.print = function(){
-    console/log(this.name + ": " + this.number);
+function sum(numbers) {
+  return numbers.reduce((a, b) => a + b, 0);
+};
+
+function lovefunc(flower1, flower2){
+  // moment of truth
+  if (flower1 %2 == 0 && flower2 %2 == 0) {
+    return false;
+  } else if (flower1 %2 != 0 && flower2 %2 == 0) {
+    return true;
+  } else if (flower1 %2 == 0 && flower2 %2 != 0) {
+    return true;
   }
 }
 
-function print() {
-  console.log(this.name + ": " + this.number);
+function lovefunc(flower1, flower2){
+  return flower1 % 2 !== flower2 % 2;
 }
-
-var a = new contact("David", 12345);
-var b = new contact("Amy", 9363343680);
-
-a.print();
-b.print();
