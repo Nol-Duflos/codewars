@@ -283,3 +283,12 @@ function betterThanAverage(classPoints, yourPoints) {
 
 const betterThanAverage(classPoints, yourPoints) => 
   return yourPoints > classPoints.reduce((x,y)=>x+y) / classPoints.length;
+
+function isTriangle(a,b,c)
+{
+   return ( a + b > c ) && ( b + c > a) && ( a + c > b );
+}
+
+function maps(x){
+  return x.map(num => num * 2);
+}
