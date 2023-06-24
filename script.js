@@ -141,64 +141,93 @@
 //   this.status = status;
 // }
 
-var John = {name: "John", age: 25};
-var James = {name: "James", age: 21};
-//Les objets sont fait de propriétés qui sont utilisés pour décrirent l'objet. Les valeurs de la propriété d'un objet peuvent soit contenir de de la data primaire, soit d'autres objets
-//Les méthodes sont des fonctions qui sont comprises comme des propriétés d'objets.
-nomMethode = function() {
-  //Lignes de codes
-}
-//C'est avec cette syntax qu'on accède à l'object
-nomObject.nomMethode();
+// var John = {name: "John", age: 25};
+// var James = {name: "James", age: 21};
+// //Les objets sont fait de propriétés qui sont utilisés pour décrirent l'objet. Les valeurs de la propriété d'un objet peuvent soit contenir de de la data primaire, soit d'autres objets
+// //Les méthodes sont des fonctions qui sont comprises comme des propriétés d'objets.
+// nomMethode = function() {
+//   //Lignes de codes
+// }
+// //C'est avec cette syntax qu'on accède à l'object
+// nomObject.nomMethode();
 
-//Une méthode est une fonction qui appartient à un object. On y fait référence avec le mot-clef "This"
-function person(name, age) {
+// //Une méthode est une fonction qui appartient à un object. On y fait référence avec le mot-clef "This"
+// function person(name, age) {
+//   this.name = name;
+//   this.age = age;
+//   this.changeName = function(name) {
+//     this.name = name;
+//   }
+// }
+
+// var p = new person("Davis", 23);
+// p.changeName("John"); //Maintenant, quand on appelle p.name, on obtient "John";
+
+// this.changeprice = function(price) {
+//   this.price = price - (discount*price);
+// }
+
+// function main() {
+//   var proID = readLine();
+//   var price = parseInt(readLine(), 10);
+//   var discount = parseInt(readLine(), 10);
+
+//   var prod1 = new CSSMathProduct(proID, price);
+//   console.log(prod1.proID + " price: " + prod1.price);
+
+//   prod1.changeprice(discount);
+//   console.log(prod1.proID + " new price: " + prod1.price);
+// }
+
+// function Product(proID, price) {
+//   this.proID = proID;
+//   this.price = price;
+
+//   this.changeprice = function(discount) {
+//     this.price = price - (discount*price);
+//   }
+// }
+
+// //Price-((discount/100)*Price)
+
+// function quelquun(name, age) {
+//   this.name = name;
+//   this.age = age;
+//   this.yearOfBirth = bornYear;
+// }
+
+// function bornYear() {
+//   return 2016 - this.age;
+// }
+
+// var p3 = new quelquun("A", 22);
+// console.log(p3.yearOfBirth());
+
+var myString = "abcdef";
+console.log(myString.length);
+
+//Contact (name, number)
+
+NomMethode = function() {
+  //Ton code
+  this.contact = contact;
+}
+
+function contact(name, number) {
   this.name = name;
-  this.age = age;
-  this.changeName = function(name) {
-    this.name = name;
+  this.number = number;
+
+  this.print = function(){
+    console/log(this.name + ": " + this.number);
   }
 }
 
-var p = new person("Davis", 23);
-p.changeName("John"); //Maintenant, quand on appelle p.name, on obtient "John";
-
-this.changeprice = function(price) {
-  this.price = price - (discount*price);
+function print() {
+  console.log(this.name + ": " + this.number);
 }
 
-function main() {
-  var proID = readLine();
-  var price = parseInt(readLine(), 10);
-  var discount = parseInt(readLine(), 10);
+var a = new contact("David", 12345);
+var b = new contact("Amy", 9363343680);
 
-  var prod1 = new CSSMathProduct(proID, price);
-  console.log(prod1.proID + " price: " + prod1.price);
-
-  prod1.changeprice(discount);
-  console.log(prod1.proID + " new price: " + prod1.price);
-}
-
-function Product(proID, price) {
-  this.proID = proID;
-  this.price = price;
-
-  this.changeprice = function(discount) {
-    this.price = price - (discount*price);
-  }
-}
-
-//Price-((discount/100)*Price)
-
-function quelquun(name, age) {
-  this.name = name;
-  this.age = age;
-  this.yearOfBirth = bornYear;
-}
-
-function bornYear() {
-  return 2016 - this.age;
-}
-
-var p3 = new quelquun("A", 22);
-console.log(p3.yearOfBirth());
+a.print();
+b.print();
