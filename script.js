@@ -269,3 +269,17 @@ function greet(name){
   //your code here
   return `Hello, ${name} how are you doing today?`
 }
+
+function betterThanAverage(classPoints, yourPoints) {
+  // Your code here
+  
+  classPoints.push(yourPoints);
+  if (classPoints.reduce((x,y)=>x+y) <= yourPoints) {
+    return true 
+    } else if (classPoints.reduce((x,y)=>x+y) > yourPoints){
+    return false;
+    }
+}
+
+const betterThanAverage(classPoints, yourPoints) => 
+  return yourPoints > classPoints.reduce((x,y)=>x+y) / classPoints.length;
