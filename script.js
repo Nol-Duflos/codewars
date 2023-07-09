@@ -310,3 +310,12 @@ const areaOrPerimeter = function(l , w) {
 function reverseList(list) {
   return list.reverse();
 }
+
+//Créer une fonction qui retourne le volume d'un cuboïde
+//Du premier coup !
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    // your code here
+    return length*width*height;
+  }
+}
