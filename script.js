@@ -292,3 +292,15 @@ function isTriangle(a,b,c)
 function maps(x){
   return x.map(num => num * 2);
 }
+
+//créer une fontion qui retourne l'air si c'est un carrée ou le perimêtre si c'est un rectangle
+//Du premier coup!!
+const areaOrPerimeter = function(l , w) {
+  if(l == w){
+    return(l*w);
+  } else {
+    return((l+w)*2);
+  }
+  // Return your answer
+};
+
