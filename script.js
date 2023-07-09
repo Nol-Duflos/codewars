@@ -343,3 +343,15 @@ function check(a, x) {
   // your code here
   return a.includes(x);
 }
+
+//
+//écrit une fonction qui prend en compte le status de la personne 
+//Si name = Owner, retourner "Hello boss"
+function greet (name, owner) {
+  // Add code here
+  if(name == owner){
+    return "Hello boss";
+  }else{
+    return "Hello guest";
+  }
+}
