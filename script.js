@@ -325,3 +325,21 @@ function cockroachSpeed(s) {
   return parseInt(s*100000 / 3600);
   //Good Luck!
 }
+
+//Est-ce qu'il y auras assez d'espace ?
+//J'ai galéré pour celle là alros que le calcul est simple T_T
+
+function enough(cap, on, wait) {
+  // your code here
+  if(cap - (on + wait) >= 0){
+    return 0;
+  } else {
+    return (on + wait) - cap;
+  }
+}
+//You only need one - Beginner
+//Ecrit une fonction qui vérifie si un nombre x se trouve dans une array a
+function check(a, x) {
+  // your code here
+  return a.includes(x);
+}
