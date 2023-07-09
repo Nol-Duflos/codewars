@@ -355,3 +355,12 @@ function greet (name, owner) {
     return "Hello guest";
   }
 }
+
+//écrit une fonction qui retourne la position dans l'alphabet d'une lettre
+//Je me suis aidé d'internet pour trouver la méthode employé "CharCodeAt()" et l'importance de calculer par -96 pour le code ASCII
+
+function position(letter){
+//Write your own Code!
+  let position = letter.charCodeAt() - 96;
+  return `Position of alphabet: ${position}`;
+}
