@@ -319,3 +319,9 @@ class Kata {
     return length*width*height;
   }
 }
+
+//Ecrit une fonction qui convertie les cm/s en km/h
+function cockroachSpeed(s) {
+  return parseInt(s*100000 / 3600);
+  //Good Luck!
+}
