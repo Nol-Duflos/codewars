@@ -304,3 +304,9 @@ const areaOrPerimeter = function(l , w) {
   // Return your answer
 };
 
+//Inverse l'ordre d'une liste:
+//Du premier coup !!
+//J'ai tout de suite deviné qu'il fallait la mathode 'reverse()' :D
+function reverseList(list) {
+  return list.reverse();
+}
