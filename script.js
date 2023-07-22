@@ -460,3 +460,14 @@ console.log(isPremier("Lmao je suis pas un nombre >:]"));
 console.log(isPremier(69));
 console.log(isPremier(42));
 
+
+let entier1 = 5;
+let entier2 = 169;
+
+console.log(`Mes valeurs initials sont a = ${entier1} et b = ${entier2}`);
+
+entier1 = entier1 + entier2;
+entier2= entier1 - entier2;
+entier1 = entier1 - entier2;
+
+console.log(`Mes valeurs permutées sont a = ${entier1} et b = ${entier2}`);
