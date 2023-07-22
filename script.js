@@ -437,3 +437,26 @@ if (moyenne > 15 ){
 } else {
     console.log("Vous passerez au rattrapage ce trimestre, courage !");
 }
+
+function isPremier(n) {
+  if(typeof n === 'string' || n instanceof String){
+      return "Je t'avais dit de rentrer un chiffre petit malin >:[";
+  }
+  for(i = 2; i < n; i++){
+      if(n % i == 0){
+          return `${n} n'est pas premier`;
+      }
+  }
+  return `${n} est premier`;
+};
+
+console.log(isPremier(9));
+console.log(isPremier(11));
+console.log(isPremier(22));
+console.log(isPremier(23));
+console.log(isPremier(3.14));
+console.log(isPremier(181));
+console.log(isPremier("Lmao je suis pas un nombre >:]"));
+console.log(isPremier(69));
+console.log(isPremier(42));
+
