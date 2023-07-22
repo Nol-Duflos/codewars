@@ -402,3 +402,38 @@ while(dec > 0){
 }
 console.log(reponse, hex);
 
+let tableau = [];
+
+
+for(let i = 0; i<9; i++){
+    const note = parseInt(prompt(`Entrez la note ${i+1} : `));
+    console.log(note);
+    if(isNaN(note)){
+        console.log("Je t'avais dit de rentrer un chiffre petit malin >:[");
+        i--;
+    } else if(note < 0 || note > 20) {
+        console.log("teuteuteu, je te demande un nombre entre 0 et 20");
+        i--;
+    } else {
+        tableau.push(note);
+    }
+};
+
+console.log(tableau);
+
+
+let sum = 0;
+
+for(let i = 0; i< tableau.length; i++){
+    sum += parseInt(tableau[i]);
+}
+
+let moyenne = sum / 9;
+console.log(moyenne.toFixed(2));
+
+
+if (moyenne > 15 ){
+    console.log("Bravo ! Vous êtes un bon élève :D");
+} else {
+    console.log("Vous passerez au rattrapage ce trimestre, courage !");
+}
