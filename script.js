@@ -384,3 +384,21 @@ while(dec > 0){
 console.log(reponse, hex);
 
 
+let dec = parseInt(prompt("Entrez un nombre decimal : "));
+
+console.log(dec);//<-- Cette valeur sera modifier, donc n'utilise PAS de const
+let reponse = `La valeur de ${dec} en hexadécimal est : `;
+
+
+const listConv = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"];
+
+let hex = "";
+let calcul; 
+
+while(dec > 0){
+    calcul = dec % 16;
+    hex = listConv[calcul] + hex;
+    dec = Math.floor(dec / 16);
+}
+console.log(reponse, hex);
+
