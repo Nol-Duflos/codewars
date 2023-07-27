@@ -363,7 +363,13 @@ function position(letter){
 //Write your own Code!
   let position = letter.charCodeAt() - 96;
   return `Position of alphabet: ${position}`;
+
+
+
+  d-not letting u go
 }
+
+
 
 let dec = parseInt(prompt("Entrez un nombre decimal : "));
 
