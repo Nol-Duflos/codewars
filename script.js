@@ -480,3 +480,9 @@ entier1 = entier1 - entier2;
 console.log(`Mes valeurs permutées sont a = ${entier1} et b = ${entier2}`);
 
 //Never gonna giv u up, nerver gonna let u dooooown
+
+
+function minMax(arr){
+  
+  return [Math.min(...arr),Math.max(...arr)]; // fix me!
+}
