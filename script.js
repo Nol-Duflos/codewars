@@ -366,7 +366,8 @@ function position(letter){
 
 
 
-  d-not letting u go
+  //Not ur babe
+  //it is a lotof mistakes
 }
 
 
