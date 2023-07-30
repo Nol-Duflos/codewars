@@ -523,3 +523,14 @@ function rentalCarCost(d) {
     return sum;
   }
 }
+
+//ordering the words
+
+function orderWord(s){
+  //your code here
+  if(s === "" || s === null){
+    return "Invalid String!";
+  } else {
+    return s.split("").sort().join("");
+  }
+}
