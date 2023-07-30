@@ -486,3 +486,19 @@ function minMax(arr){
   
   return [Math.min(...arr),Math.max(...arr)]; // fix me!
 }
+
+
+//Count all the sheep on farm in the heights of New Zealand
+
+function lostSheep(friday,saturday,total){
+  //your code here
+  let x = 0;
+  let y = 0;
+  friday.forEach(i => {
+    x += i;
+  });
+  saturday.forEach(i => {
+    y += i;
+  });
+  return total - (x + y);
+}
