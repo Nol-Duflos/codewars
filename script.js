@@ -534,3 +534,20 @@ function orderWord(s){
     return s.split("").sort().join("");
   }
 }
+
+
+//Find Maximum and Minimum Values of a List
+var min = function(list){
+  let minElement = list[0];
+  for(let i = 0; i < list.length; i++){
+      if(list[i] < minElement){
+         minElement = list[i];
+    } 
+  }
+  return minElement;
+}
+
+var max = function(list){
+  
+  return Math.max(...list)
+}
