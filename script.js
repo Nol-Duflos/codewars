@@ -509,3 +509,17 @@ function smash (words) {
   
   return words.toString().replace(/,/gi, " ");
 }
+
+//Transportation vacation
+
+function rentalCarCost(d) {
+  // Your solution here
+  let sum = d*40;
+  if(d >= 7){
+    return(sum - 50);
+  }else if(d >= 3){
+    return(sum - 20);
+  }else{
+    return sum;
+  }
+}
