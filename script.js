@@ -502,3 +502,10 @@ function lostSheep(friday,saturday,total){
   });
   return total - (x + y);
 }
+
+//Sentence smash
+
+function smash (words) {
+  
+  return words.toString().replace(/,/gi, " ");
+}
