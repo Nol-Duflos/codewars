@@ -566,3 +566,16 @@ function isLeapYear(year) {
     return false;
   }
 }
+
+//Add Length, 8kyu
+
+function addLength(str) {
+  //start-here
+    let words = str.split(" ");
+    
+    let array = words.map((words) => {
+      return words + " " + words.length;
+    })
+    return array;
+  }
+  
